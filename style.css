@@ -1,0 +1,166 @@
+/* Diyaa Daifi (d4d) */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #000000, #1a1a1a, #333333);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #9b59b6;
+    text-shadow: 2px 2px 4px #333333;
+}
+
+label {
+    margin: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 4px solid #444;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    border-color: #9b59b6;
+    background-color: #ffffff;
+}
+
+
+button {
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    color: #ffffff;
+    background-color: #9b59b6;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #732d91;
+    transform: scale(1.05);
+}
+
+
+.write-todo {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 600px;
+    background: #222222;
+    border: 2px solid #9b59b6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 300px 200px 100px;
+
+}
+
+
+.write-todo p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.write-todo button {
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.write-todo button:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    border-top: 2px solid #9b59b6;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+/*mobile */
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    input, button {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .write-todo {
+        padding: 15px;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .write-todo button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .write-todo p {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 1.2rem;
+    }
+
+    input, button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .write-todo {
+        width: 95%;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .write-todo button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
